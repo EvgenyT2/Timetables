@@ -1,0 +1,132 @@
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body{
+  font: 18px Helvetica;
+  height: 100vh;
+  margin: 0;
+}
+.text-center{
+  text-align: center;
+}
+.full-width{
+  width: 100%;
+}
+#root{
+  height: 100%;
+}
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  "header" 
+  "main" 
+  "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 75px 1fr 60px;
+  height: 100%;
+}
+.header{
+  grid-area: header;
+  background-color: #1d8dce;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+.page-name {
+  display: flex;
+  margin-left: 20px;
+}
+.page-name a{
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.page-name a:hover{
+  color: #ff8000;
+}
+.main{
+  grid-area: main;
+}
+.footer{
+  grid-area: footer;
+  background-color: #1d8dce;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+}
+.content{ 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;  
+}
+.content div{
+  margin-top: 10px;
+  width: 100%;
+  min-width: 200px;
+  max-width: 600px;
+}
+.button-search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-search div{
+  margin-top: 15px;
+}
+.button-search button{
+  background-color: #1d8dce;
+  width: 200px;
+  height: 50px;
+}
+.button-search button:hover{
+  background-color: #1d8dce;
+}
+.output-plan{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px; 
+}
+.output-plan-stops{
+  display: inline-block;
+  margin-right: 5px;
+}
+.output-walk{
+  background-color: #e0e7eb;
+  border-radius: 5px;
+  font-size: 24px;
+}
+.output-tram{
+  background-color: #1bc23f;
+  border-radius: 5px;
+  font-size: 24px;
+}
+.output-bus{
+  background-color: #258ac5;
+  border-radius: 5px;
+  font-size: 24px;
+}
+.output-boat{
+  background-color: #5eb9ee;
+  border-radius: 5px;
+  font-size: 24px;
+}
+.output-rail{
+  background-color: #ae2fc2;
+  border-radius: 5px;
+  font-size: 24px;
+}
+.output-subway{
+  background-color: #e75815;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
